@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #FFAA00; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    margin: 0; 
+    font-family: "Chewy"
+}
+
+
+main {
+    background: 
+    linear-gradient(rgba(119, 221, 119, 0.836), rgba(119, 221, 119, 0.936)), 
+    url("../img/grid.png");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mensagem{
+    font-size: 70px;
+}
+#numero_tentativas{
+    color: #ff6961;
+}
+.botoes , .jogo{
+    display: flex;
+    
+}
+.jogo div{
+    width: 190px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jogo h1{
+    color: #000000;
+    font-size: 190px;
+    font-weight: 900;
+}
+#numero_menor, #numero_maior{
+    color: #ff6961;
+}
+.numero_menor{
+    width: 450px;
+    justify-content: right;
+}
+.numero_secreto{
+    width: 450px;
+    justify-content: center;
+}
+.numero_maior{
+    width: 450px;
+    justify-content: left;
+}
+
+.grid_numbers{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.grid_numbers div{
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.671);
+    border-bottom: white solid 10px;
+    border-radius: 15px;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+.grid_numbers div:hover{
+    background:#ffaa00e3;
+}
+.botoes{
+    width: 800px;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    width: 250px;
+    font-size: 56px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: white solid 3px;
+    border-radius: 25px;
+    background-color: #ff6961;
+    font-family: "Chewy";
+    color: #ebe5e0;
+}
+button:hover{
+    background-color: #ffaa00e3;
+}
